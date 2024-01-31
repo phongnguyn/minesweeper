@@ -117,6 +117,7 @@ const addListner = () => {
     const boxes = $(".grid").children();
     boxes.each(function() {
         $(this).on("mousedown", function( event ) {
+            $(this).css('background-color', 'rgb(0, 99, 124)');
             if (event.which === 1) leftclick($(this).attr('id'));
             else if (event.which === 3) rightclick($(this).attr('id'));
         });
@@ -131,7 +132,6 @@ document.querySelector('.btn1').addEventListener('click', () => {
 
 document.querySelector('.btn2').addEventListener('click', () => {
     grid = new Grid(16,16, 40);
-
 });
 
 document.querySelector('.btn3').addEventListener('click', () => {
