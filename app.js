@@ -135,6 +135,6 @@ document.querySelector('.btn2').addEventListener('click', () => {
 });
 
 document.querySelector('.btn3').addEventListener('click', () => {
-    grid = new Grid(16,30, 99);
+    grid = new Grid(30,16, 99);
 });
 
